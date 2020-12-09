@@ -1,0 +1,181 @@
+/*general styling*/
+    * {
+        color: #232322;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;     
+    }
+
+    body {
+        background-color: #e0e0e0;
+    }
+
+    header {
+        background-image: linear-gradient(rgba( 
+            35, 35, 34, 0.5), rgba( 224, 224, 224, 1
+            )), url(../Images/Coding.png);
+        background-size: 100em;
+        height: 20em;
+        text-align: center;        
+    }
+
+    h2, h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;          
+    }
+
+    h1 {
+        color: #F5ECDB;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main {
+        background-color: #e0e0e0;
+    }
+/*header*/
+
+    .headtext h1, .headtext h2{
+        color: white;
+        text-decoration: none;
+    }
+/*body*/
+
+    .body{
+        width: 100%; 
+    }
+
+    .body .main {
+        float: right;      
+    }
+/*menu and navigation*/
+
+    .body .menu {
+        text-align: center;
+        float: left;
+    }
+
+    .menu img {     
+        height: auto;
+        width: 100%;
+        border-radius: 100%;
+        border: 2px solid white;
+    }
+
+    .me {
+        transition: border-radius 1s ease;
+      }
+      
+      .me:hover {
+        border-top-right-radius: 700px;
+        border-bottom-left-radius: 700px;
+      }
+
+    .main span {
+        color: #003366;
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .nav {
+        height: 25%;
+        width: 100%;
+        justify-content: center;
+        line-height: .6em;
+        background-color: #036;
+        border: 2px solid white;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 10px;
+        transition: border-bottom-left-radius 1s ease, border-top-left-radius 1s ease, border-top-right-radius 1s ease, border-bottom-right-radius 1s ease, border 1s ease, background-color 1s ease;       
+    }
+
+    .nav:hover {
+        background-color: #034530;
+        border: 1px double pink;
+        border-top-right-radius: 100px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 100px;
+    }
+
+    .opt {
+        color: white;
+        transition: color 0.2s ease;
+    }
+
+    .opt:hover {
+        color: grey;
+    }
+/*languages*/
+
+    .interests {
+        float: left;      
+    }
+
+    .lang {
+        float: right;        
+    }
+
+    .lang img {
+        background-color: white;
+        border: 1px solid black;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .wex {
+        clear: both;
+    }
+/*contact*/
+
+    .cont{
+        background-color: #232322;
+        text-align: center;
+    }
+
+    .cont h3 {
+        text-decoration: none;
+    }
+
+    .cont img {
+        width: 100px;
+        height: 100px;    
+    }
+
+    .cont p, .cont h3, .cont a, .nav p, .nav h3{
+        color: white;
+    }
+
+    footer {
+        clear: both;
+    }
+/*Media quaries*/
+
+    @media screen and (max-width: 992px) {
+      .menu img {
+          height: 200px;
+          width: auto;
+      }
+      .nav {
+        height: 50%;
+        width: 100%;
+    }
+}
+    @media screen and (max-width: 575px) {
+        .body .menu {
+            text-align: center;          
+            float: none;
+        }
+
+        .menu img {           
+            height: 200px;
+            width: auto;
+        }      
+        .nav {
+            height: 60%;
+        }   
+
+    }

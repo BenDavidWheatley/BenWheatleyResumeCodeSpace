@@ -1,0 +1,430 @@
+/* 
+    Swedish Green = #CCAC40 - 204, 172, 64
+    Sage = #778F7F 119, 143, 127
+    Tulip = #D85E40 216, 94, 64
+    Adobe = #E8A69D 232, 166, 157
+    Linen = #F5ECDB 245, 236, 219
+    Onyx = #232322 35, 35, 34
+
+
+*/
+/*general styling*/
+
+    * {
+        color: #232322;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+        line-height: 1.5rem;
+    }
+
+    body {
+        background-color: #e0e0e0;
+
+    }
+    header {
+        background-image: linear-gradient(rgba( 
+            35, 35, 34, 0.5), rgba( 224, 224, 224, 1
+            )), url(../Images/Coding.png);
+        background-size: 100em;
+        height: 20em;
+        text-align: center;
+        
+        
+    }
+
+    h2, h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-decoration: none;
+        margin-left: 20px;
+       
+        
+    }
+
+    h1 {
+        color: #F5ECDB;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    main {
+        padding-left: 10px;
+        padding-right: 20px;
+        background-color: #e0e0e0;
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: 80px;
+}
+
+/*header*/
+
+    .headtext {
+        padding: 90px;
+    }
+    .headtext h1, .headtext h2{
+        color: white;
+        text-decoration: none;
+    }
+
+/*body*/
+
+    .body{
+        width: 100%; 
+    }
+
+    .main article, .main section {
+        padding-bottom: 10px;
+    }
+
+    .main p {
+        margin-left: 20px;
+    }
+
+    .body .main {
+        float: right;
+        width: 60%;
+    }
+
+/*menu and navigation*/
+
+    .body .menu {
+        width: 20%;
+        text-align: center;
+        margin-left: 80px;
+        float: left;
+    }
+
+    .menu img {
+        
+        height: auto;
+        width: 100%;
+        margin-top: 50px;
+        border-radius: 100%;
+        border: 2px solid white;
+    }
+
+    .me {
+        transition: border-radius 1s ease;
+      }
+      
+      .me:hover {
+        border-top-right-radius: 700px;
+        border-bottom-left-radius: 700px;
+      }
+
+
+    .menu h3, .headtext h2 {
+        margin-left: 0px;
+    }
+
+    .main span {
+        color: #003366;
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 5px;
+        padding-right: 10px;
+        padding-left: 10px;
+        
+    }
+
+
+    .nav {
+        height: 20%;
+        width: 100%;
+        padding-top: 1.5em;
+        padding-bottom: 1.5em;
+        line-height: .6em;
+        background-color: #036;
+        border: 2px solid white;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        border-bottom-left-radius: 10px;
+        margin-top: 40px;
+        transition: border-bottom-left-radius 1s ease, border-top-left-radius 1s ease, border-top-right-radius 1s ease, border-bottom-right-radius 1s ease, border 1s ease, background-color 1s ease;
+        
+    }
+
+    .nav:hover {
+        background-color: #034530;
+        border: 1px double pink;
+        border-top-right-radius: 100px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 100px;
+    }
+
+    .opt {
+        color: white;
+        transition: color 0.2s ease;
+    }
+
+    .opt:hover {
+        color: grey;
+    }
+
+/*languages*/
+
+    .interests {
+        float: left;
+        width: 30%;
+    
+    }
+
+    .lang {
+        float: right;
+        width: 60%;
+        
+    }
+
+    .lang img {
+        background-color: white;
+        padding: 30px;
+        margin-left: 5%;
+        border: 1px solid black;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 5px;
+    }
+
+    .wex {
+        clear: both;
+    }
+
+
+/*contact*/
+
+    .cont{
+        background-color: #232322;
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    .cont h3 {
+        text-decoration: none;
+    }
+
+    .cont img {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .cont p, .cont h3, .cont a, .nav p, .nav h3{
+        color: white;
+    }
+
+    .workex  {
+        margin-top: 1em;
+    }
+
+    footer {
+        clear: both;
+    }
+
+
+   
+
+  
+
+    @media screen and (max-width: 1016px) {
+
+        .menu {
+            display:inline;
+        }
+
+        .body .menu {
+            float: none;
+        }
+
+        .body .main {
+            float: none;
+            width: 90%;
+           
+        }
+        .tabimg {
+            height: 250px;
+            width: auto;
+        }
+        .menu .nav {
+            width: 60%;
+            height: 200px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            line-height: 0;
+            float: right;
+            margin-right: 20px;
+        
+        }
+
+        .one, .two {
+            display: inline-block;
+        }
+
+        .one {
+            float: left;
+            width: 48%; 
+            text-align: center;
+        }
+
+        .two {
+            float: right;
+            width: 48%;
+            text-align: center;
+        }
+
+            
+        .menu img {
+            float:left;
+            height: 200px;
+            width: auto;
+            margin-top: 70px;
+            border-radius: 100%;
+            border: 2px solid white;
+            margin-left: 40px;
+
+        }
+
+        .main {
+            clear: both;
+            padding-top: 20px;
+            width: 100%;
+        }
+   
+
+    }
+
+    @media screen and (max-width: 840px) {
+         .menu section {
+            margin: 20px auto;
+            width: 80%
+
+         
+           
+        }
+
+        .me {
+            height: 200px;
+            width: 100%;
+            margin: 20px auto;
+        }
+        
+
+        .menu .nav {
+         
+         
+        
+            width: 90%;
+            
+            height: 200px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            line-height: 0;
+           
+            
+        }
+
+    }
+
+    @media screen and (max-width: 550px) {
+
+        
+
+
+        body {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+
+        .interests {
+            float: none;
+        }
+
+        .lang {
+            float: none;
+        }
+
+        .body .menu {
+            width: 90%;
+            text-align: center;
+            
+            float: none;
+        }
+    
+        .menu img {
+            
+            height: 200px;
+            width: auto;
+            margin-top: 50px;
+            border-radius: 100%;
+            border: 2px solid white;
+            border-radius: 100%;
+        }
+    
+        
+          
+     
+    
+    
+        .menu h3, .headtext h2 {
+            margin-left: 0px;
+        }
+    
+        .main span {
+            color: #003366;
+            border: 1px solid black;
+            background-color: white;
+            border-radius: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            
+        }
+    
+    
+        .nav {
+            height: 20%;
+            width: 30%;
+            padding-top: 1.5em;
+            padding-bottom: 1.5em;
+            line-height: .6em;
+            background-color: #036;
+            border: 2px solid white;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-top: 40px;
+            transition: border-bottom-left-radius 1s ease, border-top-left-radius 1s ease, border-top-right-radius 1s ease, border-bottom-right-radius 1s ease, border 1s ease, background-color 1s ease;
+            
+        }
+    
+        .nav:hover {
+            background-color: #034530;
+            border: 1px double pink;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+    
+        .opt {
+            color: white;
+            transition: color 0.2s ease;
+        }
+    
+        .opt:hover {
+            color: grey;
+        }
+    }
+
+
+
+
+
